@@ -1,8 +1,8 @@
 void main()
 {
 
-A s1 = new A(); 
-B s2 = new B();
+Firstperson s1 = new Firstperson(); 
+Secondperson s2 = new Secondperson();
 s1.m=10;
 s1.n=20;
 
@@ -25,7 +25,7 @@ print(s1.n);
 
 }
 
-class A{
+class Firstperson{
 int m, n;
 void display1( )
 {
@@ -35,8 +35,8 @@ print(n);
 }
 
 
-class B extends A{
-int c;
+class Secondperson extends Firstperson{
+int Thirdperson;
 void display2( )
 {
 print(c);
