@@ -3,34 +3,34 @@ void main()
 
 Firstperson s1 = new Firstperson(); 
 Secondperson s2 = new Secondperson();
-s1.m=10;
-s1.n=20;
+s1.persononemoney=10;
+s1.persontwomoney=20;
 
 print('State of object A');
 s1.display1();
 
-s2.m = 7; 
-s2.n = 8; 
-s2.c = 9;
+s2.persononemoney = 7; 
+s2.persontwomoney = 8; 
+s2.personthreemoney = 9;
 print('State of object B:');
 s2.display1();
 s2.display2();
 
-print('sum of m, n and c in object B is:');
+print('sum of person one, two and three money in Second person is:');
 s2.sum();
 
 print('clarity');
-print(s1.m);
-print(s1.n);
+print(s1.persononemoney);
+print(s1.persontwomoney);
 
 }
 
 class Firstperson{
-int m, n;
+int persononemoney, persontwomoney;
 void display1( )
 {
-print(m);
-print(n);
+print(persosnonemoney);
+print(persontwomoney);
 }
 }
 
@@ -42,6 +42,6 @@ void display2( )
 print(c);
 }
 void sum(){
-print(m+n+c);
+print(persononemoney+persontwomoney+personthirdmoney);
 }
 }
